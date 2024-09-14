@@ -21,7 +21,7 @@ Our goal was to develop a lightweight and efficient method for reliably detectin
 ### 3.1 Image Preprocessing
 Before detecting shapes, the input image undergoes basic preprocessing to improve edge detection results:
 - **Grayscale Conversion:** Converting the image to grayscale simplifies the edge detection process by focusing on intensity differences rather than color.
-![Gray Image](images\gray_image.png)
+![Gray Image](images/gray_image.png)
 
 ### 3.2 Edge Detection
 The edge detection is performed using **thresholding** and **contour detection**.
@@ -29,7 +29,7 @@ The edge detection is performed using **thresholding** and **contour detection**
     ```
     _, thresh_image = cv2.threshold(gray_image, 220, 255, cv2.THRESH_BINARY)
     ```
-    ![Binary Image](images\binary_image.png)
+    ![Binary Image](images/binary_image.png)
 - **Contour Detection:** Contours are extracted using the `findContours() `function in OpenCV to detect the contours (boundaries) of shapes directly from the binary (thresholded) image. The output is a list of contours, where each contour is a collection of points that represent the edge of a shape.
 
 ### 3.3 Shape Detection
@@ -70,4 +70,4 @@ pip install opencv-python numpy
 ```
 python main.py
 ```
-![Output Image](images\image.png)
+![Output Image](images/image.png)
