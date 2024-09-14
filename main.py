@@ -35,23 +35,6 @@ def get_color_name(b, g, r):
     else:
         return "Other"
 
-# Determine shape name based on the number of sides
-def get_shape_name(sides):
-    if sides == 3:
-        return "Triangle"
-    elif sides == 4:
-        return "Quadrilateral"
-    elif sides == 5:
-        return "Pentagon"
-    elif sides == 6:
-        return "Hexagon"
-    elif sides == 8:
-        return "Octagon"
-    elif sides > 8:
-        return "Circle"
-    else:
-        return "Polygon"
-
 # Main function
 def main():
     # Select an image
